@@ -1,0 +1,49 @@
+相聚場 — 品牌宣傳網頁
+=====================================
+
+【怎麼打開】
+直接用瀏覽器打開 index.html 即可（不需要安裝任何東西、不需要網路伺服器）。
+需要連上網路才能載入中文字型（Google Fonts）；沒網路時字體會退回系統字型，版面仍然正常。
+
+【檔案結構】
+index.html          ← 網頁本體，CSS 與 JavaScript 全部內嵌在這一個檔案裡
+assets/img/         ← 全部圖片（43 張）
+CONTENT.md          ← 所有查證過的文字素材：品牌資料、菜單品項與價格、園區沿革、評價數字、圖片對照表
+說明.txt            ← 本檔
+
+【怎麼上線】
+把整個資料夾原樣上傳到任何靜態網頁空間即可，例如：
+  - 自己的虛擬主機（放進 public_html）
+  - Netlify / Vercel / Cloudflare Pages（拖曳整個資料夾即可部署）
+  - GitHub Pages
+不要只上傳 index.html，assets 資料夾要一起帶上，否則圖片會不見。
+
+【怎麼換照片】
+圖片檔名都有語意，換的時候用同名覆蓋就好，不用改 HTML：
+  sign-gate.jpg      門口招牌
+  env-hall.jpg       主視覺／挑高用餐大廳
+  env-courtyard.jpg  三合院中庭
+  env-*.jpg          其他室內空間
+  food-*.jpg         菜色
+  park-*.jpg         水交社園區
+  event-*.jpg        活動
+  menu-*.jpg         菜單原件
+建議尺寸：橫式約 1600×1000、直式約 1000×1500，JPG 品質 80 左右。
+
+【要改文字的話】
+用任何文字編輯器打開 index.html，直接搜尋要改的中文字修改即可。
+電話、地址、營業時間出現在多處（導覽列、相聚提案、造訪資訊、頁尾），記得一起改。
+
+【圖片來源與授權提醒】
+目前頁面使用的照片蒐集自：水交社文化園區官方網站、相聚場／麵聚場 Facebook 粉絲專頁、
+涼子是也（lyes.tw）、老錢的老巢（qpjj.tw）、Mimi 韓の旅遊指南（mimigo.tw）、GoNews 行新聞。
+頁尾已標註來源。此版本為品牌提案版，正式對外上線前，建議替換為店家自有的高解析度照片，
+或先取得原作者授權。
+
+【店家資訊】
+水交社眷村食堂 — 相聚場 Community Canteen
+臺南市南區興中街 116 巷 7 號（水交社文化園區內）
+(06) 263-2977 ｜ 11:30–20:30 ｜ 週二、週三公休
+Facebook: facebook.com/shiangjuu
+Instagram: instagram.com/noodle_art_99
+官網: noodleart.oinapp.com

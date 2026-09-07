@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>水交社眷村食堂 — 相聚場｜臺南水交社文化園區・手工拉麵與慢燉牛腱</title>
+<meta name="description" content="相聚場 Community Canteen 位於臺南水交社文化園區的三合院眷舍內。湯頭以中藥材、蔬果與辛香料熬煮，絕不使用現成調理包；牛肉悶燉慢熟，麵條手工現拉。相聚有你，更美好。">
+<meta name="theme-color" content="#F3ECDF">
+<link rel="canonical" href="https://noodleart.oinapp.com/">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="水交社眷村食堂 — 相聚場">
+<meta property="og:title" content="水交社眷村食堂 — 相聚場｜相聚有你，更美好。">
+<meta property="og:description" content="在府城南郊的水交社眷村文化園區中，質樸不假裝飾的眷落。手工拉麵、慢燉牛腱、中藥材熬煮的湯頭。">
+<meta property="og:image" content="assets/img/env-hall.jpg">
+<meta property="og:image:alt" content="相聚場挑高木屋頂的用餐大廳">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="水交社眷村食堂 — 相聚場｜相聚有你，更美好。">
+<meta name="twitter:description" content="臺南水交社文化園區內的眷村食堂。三合院眷舍、手工拉麵、慢燉牛腱。">
+<meta name="twitter:image" content="assets/img/env-hall.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='5' fill='%23A32A21'/%3E%3Ctext x='32' y='47' text-anchor='middle' font-family='Noto Serif TC,serif' font-weight='700' font-size='44' fill='%23F3ECDF'%3E%E7%9B%B8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --paper:#F3ECDF; --paper-2:#EAE0CE; --paper-3:#DFD3BE;
+  --ink:#1B1714; --ink-2:#4A4139; --ink-3:#7B6E61;
+  --seal:#A32A21; --seal-deep:#7E1E17;
+  --seal-on-night:rgb(193,116,105); /* --seal lightened toward --paper so it clears AA on ink grounds */
+  --night:#181411; --night-2:#241E19;
+  --line:rgba(27,23,20,.14); --line-night:rgba(243,236,223,.16);
+
+  --serif:"Noto Serif TC",serif;
+  --sans:"Noto Sans TC",system-ui,sans-serif;
+  --latin:"Instrument Serif",Georgia,serif;
+
+  --ease:cubic-bezier(.2,.7,.3,1);
+  --gut:clamp(1.25rem,4vw,4.5rem);
+  --maxw:1440px;
+  --measure:38em;
+
+  --scrim-hero:linear-gradient(to top,rgba(24,20,17,.94) 0%,rgba(24,20,17,.86) 22%,rgba(24,20,17,.58) 48%,rgba(24,20,17,.34) 74%,rgba(24,20,17,.44) 100%);
+  --scrim-night:linear-gradient(to bottom,rgba(24,20,17,.90),rgba(24,20,17,.94));
+  --warm-radial:radial-gradient(115% 62% at 50% 0%,rgba(223,211,190,.62) 0%,rgba(243,236,223,0) 68%);
+}
+
+/* ============ RESET ============ */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+::selection{background:var(--seal);color:var(--paper)}
+body,h1,h2,h3,h4,p,figure,blockquote,dl,dd,ul,ol{margin:0}
+ul,ol{list-style:none;padding:0}
+img{max-width:100%;height:auto;display:block}
+button,input{font:inherit;color:inherit}
+a{color:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:5.5rem}
+
+body{
+  background:var(--paper); color:var(--ink);
+  font-family:var(--sans); font-weight:400; font-size:17px; line-height:1.9;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  letter-spacing:.015em;
+}
+@media(min-width:900px){body{font-size:18px}}
+
+/* paper texture + warm light */
+.grain{
+  position:fixed; inset:0; z-index:60; pointer-events:none; opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.86' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size:220px 220px; mix-blend-mode:multiply;
+}
+.paper-glow{background-image:var(--warm-radial)}
+
+/* ============ TYPE PRIMITIVES ============ */
+.num{font-family:var(--latin);font-weight:400;letter-spacing:-.02em;font-feature-settings:"lnum" 1}
+.lat{font-family:var(--latin);letter-spacing:-.01em}
+.kicker{
+  font-family:var(--sans);font-weight:400;font-size:13px;line-height:1.6;
+  letter-spacing:.28em;color:var(--ink-2);
+}
+.eyebrow{
+  font-family:var(--sans);font-weight:400;font-size:13px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);
+}
+.cap{
+  font-family:var(--sans);font-weight:300;font-size:13px;line-height:1.7;
+  letter-spacing:.14em;color:var(--ink-2);
+}
+.h-sec{
+  font-family:var(--serif);font-weight:900;
+  font-size:clamp(2.2rem,5vw,4rem);line-height:1.18;letter-spacing:.01em;
+}
+.lede{font-size:clamp(1.05rem,1.5vw,1.2rem);line-height:1.95;color:var(--ink-2);max-width:var(--measure)}
+p.body{max-width:var(--measure);color:var(--ink-2);line-height:1.95}
+p.body+p.body{margin-top:1.35em}
+
+.on-night{color:var(--paper)}
+.on-night .kicker,.on-night .eyebrow,.on-night .cap{color:rgba(243,236,223,.66)}
+.on-night p.body,.on-night .lede{color:rgba(243,236,223,.82)}
+
+/* vertical Chinese */
+.vert{
+  writing-mode:vertical-rl; text-orientation:upright;
+  font-family:var(--serif); letter-spacing:.06em;
+}
+@media(max-width:767px){
+  .vert{writing-mode:horizontal-tb;text-orientation:mixed;letter-spacing:.16em}
+}
+
+/* seal */
+.seal{
+  display:grid;place-items:center;background:var(--seal);color:var(--paper);
+  font-family:var(--serif);font-weight:700;line-height:1;
+  width:2.1em;height:2.1em;border-radius:2px;flex:none;
+  box-shadow:inset 0 0 0 1px rgba(243,236,223,.18);
+}
+
+/* layout */
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gut);position:relative;z-index:2}
+.g12{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--gut)}
+section{position:relative}
+.sec-pad{padding-block:clamp(4.5rem,10vw,9rem)}
+.sec-pad-lg{padding-block:clamp(6rem,15vw,13rem)}
+.rule{height:1px;background:var(--line);border:0}
+
+/* focus */
+:focus-visible{outline:2px solid var(--seal);outline-offset:2px;border-radius:1px}
+.on-night :focus-visible,.lb :focus-visible,footer.site :focus-visible{outline-color:var(--paper)}
+.skip{
+  position:fixed;top:0;left:50%;transform:translate(-50%,-120%);z-index:200;
+  background:var(--ink);color:var(--paper);padding:.9rem 1.5rem;font-size:14px;
+  letter-spacing:.1em;transition:transform .2s var(--ease);
+}
+.skip:focus-visible{transform:translate(-50%,0)}
+
+/* reveal */
+[data-reveal]{opacity:0;transform:translateY(14px);transition:opacity .5s var(--ease),transform .5s var(--ease)}
+[data-reveal].in{opacity:1;transform:none}
+
+/* buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6em;
+  min-height:52px;padding:.85rem 1.9rem;font-family:var(--sans);font-weight:500;
+  font-size:15px;letter-spacing:.16em;text-decoration:none;border:1px solid transparent;
+  transition:background .25s var(--ease),color .25s var(--ease),border-color .25s var(--ease);
+  cursor:pointer;border-radius:1px;
+}
+.btn-seal{background:var(--seal);color:var(--paper);border-color:var(--seal)}
+.btn-seal:hover{background:var(--seal-deep);border-color:var(--seal-deep)}
+.btn-ghost{background:transparent;color:var(--paper);border-color:rgba(243,236,223,.45)}
+.btn-ghost:hover{border-color:var(--paper);background:rgba(243,236,223,.08)}
+.btn-ink{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ink:hover{border-color:var(--ink);background:rgba(27,23,20,.04)}
+
+/* ============ NAV ============ */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:80;
+  background:rgba(243,236,223,.82);backdrop-filter:blur(14px) saturate(1.1);
+  -webkit-backdrop-filter:blur(14px) saturate(1.1);
+  border-bottom:1px solid var(--line);
+}
+.nav-in{
+  max-width:var(--maxw);margin-inline:auto;padding:0 var(--gut);
+  display:flex;align-items:center;justify-content:space-between;gap:1.5rem;min-height:66px;
+}
+.brand{display:flex;align-items:center;gap:.75rem;text-decoration:none;min-height:44px}
+.brand .seal{font-size:15px}
+.brand-name{font-family:var(--serif);font-weight:700;font-size:1.02rem;letter-spacing:.18em}
+.brand-en{display:block;font-family:var(--latin);font-size:.72rem;letter-spacing:.16em;color:var(--ink-2);line-height:1.2;margin-top:.15em}
+.nav-links{display:flex;align-items:center;gap:clamp(.5rem,1.4vw,1.5rem)}
+.nav-links a{
+  text-decoration:none;font-size:14.5px;letter-spacing:.12em;color:var(--ink-2);
+  padding:.7rem .35rem;min-height:44px;display:inline-flex;align-items:center;
+  position:relative;transition:color .2s var(--ease);
+}
+.nav-links a::after{
+  content:"";position:absolute;left:.35rem;right:.35rem;bottom:.55rem;height:1px;
+  background:var(--seal);transform:scaleX(0);transform-origin:left;
+  transition:transform .28s var(--ease);
+}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-tel{
+  margin-left:.6rem;min-height:44px;padding:.6rem 1.15rem;border:1px solid var(--seal);
+  color:var(--seal);text-decoration:none;font-size:14px;letter-spacing:.1em;
+  display:inline-flex;align-items:center;gap:.5em;border-radius:1px;
+  transition:background .22s var(--ease),color .22s var(--ease);
+}
+.nav-tel:hover{background:var(--seal);color:var(--paper)}
+.nav-tel .num{font-size:15px}
+.nav-toggle{
+  display:none;width:46px;height:46px;background:none;border:1px solid var(--line);
+  border-radius:1px;align-items:center;justify-content:center;cursor:pointer;
+}
+.nav-toggle span{display:block;width:19px;height:1px;background:var(--ink);position:relative}
+.nav-toggle span::before,.nav-toggle span::after{
+  content:"";position:absolute;left:0;width:19px;height:1px;background:var(--ink);
+  transition:transform .25s var(--ease);
+}
+.nav-toggle span::before{top:-6px}.nav-toggle span::after{top:6px}
+.nav-toggle[aria-expanded="true"] span{background:transparent}
+.nav-toggle[aria-expanded="true"] span::before{transform:translateY(6px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] span::after{transform:translateY(-6px) rotate(-45deg)}
+@media(max-width:1023px){
+  .nav-toggle{display:flex}
+  .nav-links{
+    position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;
+    background:var(--paper);border-bottom:1px solid var(--line);padding:.5rem var(--gut) 1.5rem;
+    gap:0;display:none;
+  }
+  .nav-links.open{display:flex}
+  .nav-links a{border-bottom:1px solid var(--line);padding:1rem .1rem;font-size:16px}
+  .nav-links a::after{display:none}
+  .nav-tel{margin:1rem 0 0;justify-content:center}
+}
+
+/* ============ HERO ============ */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--night)}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 42%}
+.hero-scrim{position:absolute;inset:0;background:var(--scrim-hero)}
+.hero-in{position:relative;z-index:3;width:100%;max-width:var(--maxw);margin-inline:auto;padding:8rem var(--gut) 0;display:flex;justify-content:space-between;align-items:flex-end;gap:2rem}
+.hero-copy{max-width:min(42rem,88%);padding-bottom:clamp(4.5rem,9vw,7rem)}
+.hero-eyebrow{color:rgba(243,236,223,.78);letter-spacing:.26em;font-size:13px;display:flex;align-items:center;gap:.85rem}
+.hero-eyebrow::before{content:"";width:34px;height:1px;background:var(--seal);flex:none}
+.hero-en{
+  font-family:var(--latin);font-size:clamp(1.4rem,3.2vw,2.5rem);color:rgba(243,236,223,.9);
+  letter-spacing:.1em;line-height:1.1;margin-top:1.1rem;
+}
+.hero-tag{
+  font-family:var(--serif);font-weight:900;color:var(--paper);
+  font-size:clamp(2.4rem,6.4vw,5.1rem);line-height:1.16;letter-spacing:.02em;margin-top:.5rem;
+  text-shadow:0 2px 30px rgba(24,20,17,.5);
+}
+.hero-sub{
+  margin-top:1.5rem;max-width:34em;color:rgba(243,236,223,.88);
+  font-size:clamp(1rem,1.35vw,1.13rem);line-height:1.95;font-weight:300;
+}
+.hero-verbs{margin-top:1.6rem;font-family:var(--latin);font-size:1rem;letter-spacing:.34em;color:rgba(243,236,223,.7);text-transform:uppercase}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.3rem}
+.hero-vert{
+  position:relative;z-index:3;align-self:flex-end;
+  display:flex;align-items:flex-end;gap:1.2rem;
+  padding-bottom:clamp(4.5rem,9vw,7rem);
+}
+.hero-vert .vert{
+  font-size:clamp(4rem,13vw,11rem);font-weight:900;color:var(--paper);line-height:.95;
+  text-shadow:0 4px 44px rgba(24,20,17,.6);
+}
+.hero-vert .seal{font-size:clamp(15px,1.6vw,20px);margin-bottom:.4rem}
+@media(max-width:1023px){
+  .hero-vert{display:none}
+  .hero-copy{max-width:100%}
+}
+.hero-scroll{
+  position:absolute;left:50%;transform:translateX(-50%);bottom:calc(2.4rem + 34px);z-index:3;
+  font-size:11.5px;letter-spacing:.36em;color:rgba(243,236,223,.62);
+}
+@media(max-width:767px){.hero-scroll{display:none}}
+
+/* marquee */
+.ticker{
+  position:absolute;bottom:0;left:0;right:0;z-index:4;
+  border-top:1px solid var(--line-night);background:rgba(24,20,17,.74);
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  overflow:hidden;padding:.85rem 0;
+}
+.ticker-track{display:flex;width:max-content;animation:slide 46s linear infinite}
+.ticker:hover .ticker-track,.ticker:focus-within .ticker-track{animation-play-state:paused}
+.ticker-seq{display:flex;flex:none;align-items:center}
+.ticker-seq span{
+  padding:0 1.6rem;font-size:13px;letter-spacing:.2em;color:rgba(243,236,223,.84);white-space:nowrap;
+}
+.ticker-seq span .num{letter-spacing:.06em;font-size:15px}
+.ticker-seq span::after{content:"·";margin-left:1.6rem;color:var(--seal);font-size:15px}
+@keyframes slide{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
+/* ============ STATEMENT ============ */
+#statement{background:var(--paper)}
+.stmt-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--gut);align-items:start}
+.stmt-kick{grid-column:1/2;display:flex;justify-content:flex-end;padding-top:.6rem}
+.stmt-kick .vert{font-size:.95rem;letter-spacing:.34em;color:var(--ink-2);font-family:var(--sans)}
+.stmt-body{grid-column:2/9}
+.stmt-quote{
+  font-family:var(--serif);font-weight:400;
+  font-size:clamp(1.55rem,3.4vw,2.85rem);line-height:1.62;letter-spacing:.015em;color:var(--ink);
+}
+.stmt-quote em{font-style:normal;color:var(--seal)}
+.stmt-tail{margin-top:2.6rem;display:grid;gap:.9rem;max-width:34em;color:var(--ink-2);font-size:1rem;line-height:1.9}
+@media(max-width:1023px){.stmt-kick{display:none}.stmt-body{grid-column:1/13}}
+
+/* ============ STORY ============ */
+#story{background:var(--paper-2)}
+.story-grid{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:calc(var(--gut)*1.2)}
+.story-aside{position:sticky;top:7rem;align-self:start;display:flex;gap:1.4rem;align-items:flex-start}
+.story-aside .vert{font-size:clamp(1.4rem,2vw,1.9rem);font-weight:700;line-height:1.5;letter-spacing:.22em}
+.story-aside .seal{font-size:17px}
+.story-main{max-width:44em}
+.story-fig{
+  float:right;width:min(46%,26rem);margin:.4rem 0 1.8rem 2.6rem;
+  background:var(--paper);padding:.7rem .7rem .2rem;border:1px solid var(--line);
+}
+.story-fig img{width:100%;height:auto}
+.story-fig figcaption{padding:.85rem .2rem 1rem;border-top:1px solid var(--line);margin-top:.7rem}
+.note{
+  margin:2.2rem 0 0;padding:.2rem 0 .2rem 1.6rem;border-left:1px solid var(--line);
+  max-width:32em;font-size:15px;line-height:1.95;color:var(--ink-2);
+}
+.note b{font-weight:500;color:var(--ink-2)}
+.note .src{display:block;margin-top:.5rem;font-size:12.5px;letter-spacing:.14em;color:var(--ink-2)}
+@media(max-width:1023px){
+  .story-grid{grid-template-columns:1fr;gap:2.5rem}
+  .story-aside{position:static;flex-direction:row-reverse;justify-content:flex-end;align-items:center}
+  .story-fig{float:none;width:100%;margin:2rem 0}
+}
+
+/* ============ TIMELINE ============ */
+#timeline{background:var(--night);color:var(--paper);overflow:hidden}
+.tl-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.10}
+.tl-bg-ov{position:absolute;inset:0;background:var(--scrim-night)}
+.tl-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:2rem;margin-bottom:clamp(3rem,6vw,5rem)}
+.tl-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line-night)}
+.tl-item{padding:2.6rem 1.6rem 0;border-right:1px solid var(--line-night)}
+.tl-item:first-child{padding-left:0}
+.tl-item:last-child{border-right:0;padding-right:0}
+.tl-year{
+  font-family:var(--latin);font-size:clamp(4.5rem,11vw,9rem);line-height:.86;
+  letter-spacing:-.03em;color:var(--paper);display:block;
+}
+.tl-item:nth-child(1) .tl-year{color:var(--seal-on-night)}
+.tl-label{
+  margin-top:1.4rem;font-family:var(--serif);font-weight:700;
+  font-size:clamp(1.05rem,1.5vw,1.3rem);letter-spacing:.08em;color:var(--paper);
+}
+.tl-text{margin-top:.8rem;font-size:15.5px;line-height:1.9;color:rgba(243,236,223,.7);font-weight:300}
+.tl-foot{
+  display:flex;flex-wrap:wrap;gap:.8rem;margin-top:clamp(3rem,6vw,4.5rem);
+  padding-top:2rem;border-top:1px solid var(--line-night);
+}
+.badge{
+  display:inline-flex;align-items:center;gap:.7rem;padding:.6rem 1.1rem;
+  border:1px solid var(--line-night);font-size:13px;letter-spacing:.14em;
+  color:rgba(243,236,223,.8);
+}
+.badge .num{color:var(--seal-on-night);font-size:16px;letter-spacing:0}
+@media(max-width:1023px){
+  .tl-grid{grid-template-columns:repeat(2,1fr)}
+  .tl-item{border-bottom:1px solid var(--line-night);padding:2rem 1.2rem 2rem}
+  .tl-item:nth-child(2n){border-right:0;padding-right:0}
+  .tl-item:nth-child(2n+1){padding-left:0}
+}
+@media(max-width:600px){
+  .tl-grid{grid-template-columns:1fr}
+  .tl-item,.tl-item:nth-child(2n){padding:1.8rem 0;border-right:0}
+}
+
+/* ============ PARK ============ */
+#park{background:var(--paper)}
+.park-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:calc(var(--gut)*1.15);align-items:start}
+.halls{margin-top:2.8rem;border-top:1px solid var(--line)}
+.hall{display:block;padding:1.15rem 0 1.2rem;border-bottom:1px solid var(--line)}
+.hall-row{display:flex;align-items:baseline;gap:.9rem}
+.hall-n{font-family:var(--latin);font-size:.95rem;color:var(--seal);flex:none;width:2.2rem}
+.hall-name{font-family:var(--serif);font-weight:700;font-size:clamp(1.1rem,1.7vw,1.35rem);letter-spacing:.04em;flex:none}
+.leader{flex:1 1 auto;border-bottom:1px dotted var(--ink-3);opacity:.45;transform:translateY(-.32em);min-width:1.5rem}
+.hall-d{font-size:14.5px;color:var(--ink-2);font-weight:300;flex:none;max-width:60%;text-align:right;line-height:1.7}
+.hall-note{margin-top:.55rem;margin-left:3.1rem;font-size:13.5px;color:var(--ink-2);line-height:1.8;max-width:34em}
+.park-note{margin-top:2.6rem;display:grid;gap:1.2rem}
+.park-cluster{position:relative;display:grid;grid-template-columns:repeat(6,1fr);gap:1rem;align-items:start}
+.park-cluster figure{margin:0;background:var(--paper);border:1px solid var(--line);padding:.55rem .55rem .1rem}
+.park-cluster img{width:100%;height:auto;object-fit:cover}
+.pc-a{grid-column:1/7}
+.pc-a img{aspect-ratio:3/2}
+.pc-b{grid-column:1/4;margin-top:1.4rem}
+.pc-b img{aspect-ratio:4/5}
+.pc-c{grid-column:4/7;margin-top:3.4rem}
+.pc-c img{aspect-ratio:4/5}
+.pc-d{grid-column:2/7;margin-top:1.2rem}
+.pc-d img{aspect-ratio:16/9}
+.park-cluster figcaption{padding:.7rem .15rem .8rem;border-top:1px solid var(--line);margin-top:.55rem;font-size:12px;letter-spacing:.1em;color:var(--ink-2)}
+@media(max-width:1023px){
+  .park-grid{grid-template-columns:1fr;gap:3rem}
+  .pc-b,.pc-c,.pc-d{margin-top:0}
+  .hall-d{max-width:none;text-align:left}
+  .hall-row{flex-wrap:wrap}
+  .leader{display:none}
+  .hall-d{flex:1 1 100%;width:auto;padding-left:3.1rem;margin-top:.35rem}
+}
+
+/* ============ CRAFT ============ */
+#craft{background:var(--night-2);color:var(--paper)}
+.craft-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:calc(var(--gut)*1.2);align-items:center}
+.craft-fig{margin:0;position:relative}
+.craft-fig img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.craft-fig figcaption{margin-top:.9rem;font-size:12.5px;letter-spacing:.14em;color:rgba(243,236,223,.6)}
+.claims{margin-top:2.6rem;border-top:1px solid var(--line-night)}
+.claim{display:grid;grid-template-columns:auto 1fr;gap:1.6rem;padding:1.9rem 0;border-bottom:1px solid var(--line-night)}
+.claim-n{font-family:var(--latin);font-size:clamp(1.9rem,3vw,2.6rem);line-height:1;color:var(--seal-on-night)}
+.claim h3{font-family:var(--serif);font-weight:700;font-size:1.3rem;letter-spacing:.08em;margin-bottom:.6rem}
+.claim p{font-size:15.5px;line-height:1.9;color:rgba(243,236,223,.76);font-weight:300;max-width:34em}
+.claim em{font-style:normal;color:var(--paper);border-bottom:1px solid var(--seal-on-night);padding-bottom:1px}
+.craft-quote{margin-top:2.8rem;max-width:38em}
+.craft-quote p{
+  font-family:var(--serif);font-size:clamp(1.15rem,1.9vw,1.5rem);line-height:1.8;color:var(--paper);
+  text-indent:-.5em;
+}
+.craft-quote footer{margin-top:1.1rem;font-size:12.5px;letter-spacing:.16em;color:rgba(243,236,223,.55)}
+@media(max-width:900px){.craft-grid{grid-template-columns:1fr;gap:2.8rem}}
+
+/* ============ MENU ============ */
+#menu{background:var(--paper)}
+.menu-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:calc(var(--gut)*1.2);align-items:start}
+.top5{margin-top:2.6rem;border-top:1px solid var(--ink)}
+.dish{display:flex;align-items:baseline;gap:.85rem;padding:1.25rem 0;border-bottom:1px solid var(--line)}
+.rank{
+  font-family:var(--latin);font-size:.82rem;letter-spacing:.06em;color:var(--seal);
+  flex:none;transform:translateY(-.55em);width:2.9rem;
+}
+.dish-name{font-family:var(--serif);font-weight:700;font-size:clamp(1.2rem,1.9vw,1.6rem);letter-spacing:.03em;flex:none}
+.dish-price{font-family:var(--latin);font-size:1.4rem;flex:none;letter-spacing:-.01em;white-space:nowrap}
+.dish-price small{font-family:var(--sans);font-size:12.5px;letter-spacing:.1em;color:var(--ink-2);margin-left:.6rem;font-weight:300}
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:1.6rem;margin-top:3rem}
+.cat h4{font-family:var(--serif);font-weight:700;font-size:1.05rem;letter-spacing:.16em;padding-bottom:.7rem;border-bottom:1px solid var(--ink);margin-bottom:.5rem}
+.cat li{display:flex;justify-content:space-between;gap:.6rem;padding:.5rem 0;border-bottom:1px solid var(--line);font-size:14px;line-height:1.6;color:var(--ink-2);font-weight:300}
+.cat li b{font-weight:400;color:var(--ink)}
+.cat li .num{font-size:15px;color:var(--ink);flex:none}
+.menu-notes{margin-top:2.4rem;display:grid;gap:.6rem;font-size:14px;color:var(--ink-2);line-height:1.85}
+.menu-notes strong{font-weight:500;color:var(--ink-2)}
+.menu-actions{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;margin-top:2.2rem}
+.link-arrow{
+  display:inline-flex;align-items:center;gap:.6em;min-height:44px;text-decoration:none;
+  font-size:15px;letter-spacing:.14em;color:var(--seal);border-bottom:1px solid var(--seal);
+  padding-bottom:.15rem;transition:gap .25s var(--ease);
+}
+.link-arrow:hover{gap:1.1em}
+.menu-stack{display:grid;gap:1.6rem}
+.menu-stack figure{margin:0;background:var(--paper);border:1px solid var(--line);padding:.6rem .6rem .1rem}
+.menu-stack img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.menu-stack figcaption{padding:.7rem .15rem .8rem;border-top:1px solid var(--line);margin-top:.6rem;font-size:12px;letter-spacing:.12em;color:var(--ink-2)}
+.ms-1{width:100%}
+.ms-2{width:82%;margin-left:auto}
+.ms-3{width:90%}
+.scans{margin-top:2.4rem}
+.scans-row{display:grid;grid-template-columns:repeat(4,1fr);gap:.7rem;margin-top:.9rem}
+.scan{padding:0;border:1px solid var(--line);background:var(--paper-2);cursor:pointer;overflow:hidden;border-radius:1px;min-height:44px}
+.scan img{width:100%;aspect-ratio:1/1;object-fit:cover;transition:transform .4s var(--ease),opacity .3s var(--ease);opacity:.9}
+.scan:hover img{transform:scale(1.03);opacity:1}
+@media(max-width:1023px){.menu-grid{grid-template-columns:1fr;gap:3rem}.cats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){
+  .cats{grid-template-columns:1fr}
+  .dish{flex-wrap:wrap}
+  .dish-price{flex:1 1 100%;padding-left:2.9rem;margin-top:.3rem;font-size:1.2rem;white-space:normal}
+  .dish-price small{margin-left:.9rem}
+  .q-stack{grid-template-columns:minmax(0,1fr)}
+}
+
+/* ============ PHOTO WALL ============ */
+#wall{background:var(--night);color:var(--paper)}
+.wall-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:2rem}
+.filters{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:2.4rem;padding-top:1.6rem;border-top:1px solid var(--line-night)}
+.filters button{
+  background:none;border:1px solid transparent;color:rgba(243,236,223,.62);
+  font-size:14.5px;letter-spacing:.2em;padding:.7rem 1.15rem;min-height:44px;cursor:pointer;
+  transition:color .22s var(--ease),border-color .22s var(--ease),background .22s var(--ease);border-radius:1px;
+}
+.filters button:hover{color:var(--paper)}
+.filters button[aria-pressed="true"]{color:var(--paper);border-color:var(--seal-on-night);background:rgba(163,42,33,.2)}
+.wall-count{font-size:12.5px;letter-spacing:.16em;color:rgba(243,236,223,.6);margin-top:1.4rem}
+.wall-grid{
+  display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:9.5vw;
+  grid-auto-flow:dense;gap:10px;margin-top:2rem;
+}
+.tile{
+  position:relative;grid-column:span 1;grid-row:span 1;overflow:hidden;padding:0;border:0;
+  background:var(--night-2);cursor:pointer;border-radius:1px;
+  transition:opacity .22s var(--ease),transform .22s var(--ease);
+}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease),filter .4s var(--ease);filter:saturate(.92)}
+.tile:hover img,.tile:focus-visible img{transform:scale(1.03);filter:saturate(1.04)}
+.tile figcaption,.tile .tcap{
+  position:absolute;left:0;right:0;bottom:0;padding:1.4rem .85rem .7rem;text-align:left;
+  font-size:12.5px;letter-spacing:.1em;color:var(--paper);line-height:1.5;
+  background:linear-gradient(to top,rgba(24,20,17,.92),rgba(24,20,17,0));
+  opacity:0;transform:translateY(6px);transition:opacity .3s var(--ease),transform .3s var(--ease);
+}
+.tile:hover .tcap,.tile:focus-visible .tcap{opacity:1;transform:none}
+.tile.is-out{opacity:0;transform:scale(.97)}
+.tile.is-gone{display:none}
+.sp2x2{grid-column:span 2;grid-row:span 2}
+.sp2x1{grid-column:span 2;grid-row:span 1}
+.sp1x2{grid-column:span 1;grid-row:span 2}
+.sp3x2{grid-column:span 3;grid-row:span 2}
+@media(hover:none){
+  .tile .tcap{opacity:1;transform:none;font-size:11.5px;padding:1.1rem .6rem .55rem}
+}
+@media(max-width:1023px){.wall-grid{grid-template-columns:repeat(4,1fr);grid-auto-rows:15vw}}
+@media(max-width:640px){
+  .wall-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:30vw;gap:7px}
+  .sp3x2{grid-column:span 2}
+}
+
+/* ============ LIGHTBOX ============ */
+.lb{
+  position:fixed;inset:0;z-index:120;display:none;
+  background:rgba(24,20,17,.965);padding:clamp(1rem,4vw,3rem);
+}
+.lb.open{display:grid;grid-template-rows:auto 1fr auto}
+.lb[hidden]{display:none!important}
+.lb-top{display:flex;justify-content:space-between;align-items:center;gap:1rem;color:rgba(243,236,223,.7)}
+.lb-idx{font-family:var(--latin);font-size:1.1rem;letter-spacing:.06em}
+.lb-stage{display:grid;place-items:center;min-height:0;padding:1rem 0}
+.lb-stage img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.lb-bot{display:flex;justify-content:space-between;align-items:center;gap:1.5rem;color:rgba(243,236,223,.78)}
+.lb-cap{font-size:14px;letter-spacing:.08em;line-height:1.7;max-width:46em}
+.lb-nav{display:flex;gap:.5rem;flex:none}
+.lb button{
+  background:none;border:1px solid var(--line-night);color:var(--paper);
+  min-width:46px;min-height:46px;display:grid;place-items:center;cursor:pointer;border-radius:1px;
+  transition:background .2s var(--ease),border-color .2s var(--ease);
+}
+.lb button:hover{background:rgba(243,236,223,.1);border-color:rgba(243,236,223,.4)}
+.lb svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+body.lb-open{overflow:hidden}
+
+/* ============ TESTIMONIALS ============ */
+#voices{background:var(--paper-2)}
+.q-stack{margin-top:clamp(2.5rem,6vw,4.5rem);display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(2.4rem,5vw,4rem)}
+.q{position:relative}
+.q p{font-family:var(--serif);line-height:1.72;letter-spacing:.015em;color:var(--ink);text-indent:-.5em}
+.q footer{margin-top:1.1rem;font-size:12.5px;letter-spacing:.16em;color:var(--ink-2)}
+.q footer b{font-weight:500;color:var(--ink-2)}
+.q1{grid-column:1/8}
+.q1 p{font-size:clamp(1.5rem,3.1vw,2.5rem)}
+.q2{grid-column:8/13;align-self:end}
+.q2 p{font-size:clamp(1.05rem,1.45vw,1.25rem);line-height:1.9}
+.q3{grid-column:3/11}
+.q3 p{font-size:clamp(1.2rem,2vw,1.65rem)}
+.q-mark{font-family:var(--latin);color:var(--seal);font-size:2.4rem;line-height:1;display:block;margin-bottom:.4rem}
+.stats{
+  display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(3.5rem,8vw,6rem);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.stat{padding:2.2rem 1.2rem;border-right:1px solid var(--line)}
+.stat:first-child{padding-left:0}
+.stat:last-child{border-right:0}
+.stat .num{display:block;font-size:clamp(2.6rem,5.5vw,4.4rem);line-height:1;color:var(--ink)}
+.stat .lbl{display:block;margin-top:.9rem;font-size:12.5px;letter-spacing:.18em;color:var(--ink-2)}
+@media(max-width:900px){
+  .q-stack{grid-template-columns:minmax(0,1fr);gap:clamp(2.4rem,7vw,3.4rem)}
+  .q1,.q2,.q3{grid-column:1/-1}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stat{border-bottom:1px solid var(--line);padding-left:0}
+  .stat:nth-child(2n){border-right:0}
+  .stat:nth-child(n+3){border-bottom:0}
+}
+
+/* ============ GATHER ============ */
+#gather{background:var(--paper)}
+.gather-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:calc(var(--gut)*1.2);align-items:start;margin-top:clamp(2.5rem,5vw,4rem)}
+.scenes{border-top:1px solid var(--ink)}
+.scene{display:grid;grid-template-columns:auto 1fr;gap:1.8rem;padding:2.1rem 0;border-bottom:1px solid var(--line)}
+.scene-n{font-family:var(--latin);font-size:1.05rem;color:var(--seal);letter-spacing:.06em;padding-top:.45rem}
+.scene h3{font-family:var(--serif);font-weight:700;font-size:clamp(1.25rem,2vw,1.65rem);letter-spacing:.05em;margin-bottom:.7rem}
+.scene p{font-size:16px;line-height:1.9;color:var(--ink-2);max-width:36em;font-weight:300}
+.price-block{margin-top:2.6rem;border:1px solid var(--line);background:var(--paper-2);padding:1.8rem}
+.price-block h4{font-family:var(--serif);font-weight:700;font-size:1.05rem;letter-spacing:.2em;margin-bottom:1.2rem}
+.price-row{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.85rem 0;border-top:1px solid var(--line);flex-wrap:wrap}
+.price-row dt{font-size:15px;color:var(--ink-2);flex:none}
+.price-row dd{margin:0;text-align:right;flex:1 1 auto}
+.price-row dd .num{font-size:1.6rem;color:var(--ink)}
+.price-row dd small{display:block;font-size:12.5px;letter-spacing:.1em;color:var(--ink-2);margin-top:.2rem}
+.gather-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.2rem}
+.event-stack{display:grid;gap:1.4rem}
+.event-stack figure{margin:0;border:1px solid var(--line);background:var(--paper);padding:.6rem .6rem .1rem}
+.event-stack img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.event-stack figcaption{padding:.7rem .15rem .8rem;border-top:1px solid var(--line);margin-top:.6rem;font-size:12.5px;letter-spacing:.1em;color:var(--ink-2);line-height:1.7}
+.es-2{width:88%;margin-left:auto}
+@media(max-width:1023px){.gather-grid{grid-template-columns:1fr;gap:3rem}}
+
+/* ============ VISIT + FOOTER ============ */
+#visit{background:var(--night);color:var(--paper)}
+.visit-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:0;align-items:stretch}
+.visit-media{position:relative;min-height:420px}
+.visit-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#visit .wrap{padding-inline:0;max-width:none}
+.visit-info{
+  padding-block:clamp(3rem,7vw,6rem);
+  padding-left:clamp(2rem,5vw,5rem);
+  padding-right:max(var(--gut),calc((100vw - var(--maxw))/2 + var(--gut)));
+}
+.dl{margin-top:2.4rem;border-top:1px solid var(--line-night)}
+.dl>div{display:grid;grid-template-columns:7.5rem 1fr;gap:1.5rem;padding:1.1rem 0;border-bottom:1px solid var(--line-night)}
+.dl dt{font-size:13px;letter-spacing:.22em;color:rgba(243,236,223,.55);padding-top:.25rem}
+.dl dd{margin:0;font-size:16px;line-height:1.85;color:rgba(243,236,223,.9)}
+.dl dd a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;box-shadow:inset 0 -1px 0 rgba(243,236,223,.34);transition:box-shadow .2s var(--ease)}
+.dl dd a:hover{box-shadow:inset 0 -1px 0 var(--paper)}
+
+.dl dd small{display:block;font-size:13px;color:rgba(243,236,223,.55);margin-top:.3rem;letter-spacing:.06em}
+.dl dd .num{font-size:1.15rem;letter-spacing:.02em}
+.socials{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:2rem}
+.socials a{
+  display:inline-flex;align-items:center;gap:.65em;min-height:44px;padding:.6rem 1.05rem .6rem .9rem;
+  text-decoration:none;font-size:14px;letter-spacing:.14em;color:rgba(243,236,223,.85);
+  border:1px solid var(--line-night);border-radius:1px;transition:border-color .2s var(--ease),color .2s var(--ease);
+}
+.socials a:hover{border-color:var(--paper);color:var(--paper)}
+.ico{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+@media(max-width:1023px){
+  .visit-grid{grid-template-columns:1fr}
+  .visit-media{min-height:56vw}
+  .visit-info{padding:clamp(3rem,8vw,4.5rem) var(--gut)}
+  .dl>div{grid-template-columns:1fr;gap:.3rem}
+}
+
+footer.site{background:var(--night);color:var(--paper);border-top:1px solid var(--line-night)}
+.foot-grid{display:grid;grid-template-columns:auto 1fr;gap:calc(var(--gut)*1.2);padding-block:clamp(3.5rem,8vw,6rem);align-items:start}
+.foot-mark{display:flex;align-items:flex-start;gap:1.1rem}
+.foot-mark .vert{font-size:clamp(2.6rem,6vw,4.6rem);font-weight:900;line-height:1;color:var(--paper);letter-spacing:.08em}
+.foot-mark .seal{font-size:15px}
+.foot-en{font-family:var(--latin);font-size:1.05rem;letter-spacing:.14em;color:rgba(243,236,223,.6)}
+.credit{font-size:13px;line-height:2;color:rgba(243,236,223,.62);max-width:46em;margin-top:1.4rem;font-weight:300}
+.foot-bot{
+  display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;
+  padding-block:1.6rem;border-top:1px solid var(--line-night);
+  font-size:12.5px;letter-spacing:.14em;color:rgba(243,236,223,.6);
+}
+@media(max-width:767px){.foot-grid{grid-template-columns:1fr;gap:2rem}.foot-mark{align-items:center}}
+
+/* ============ REDUCED MOTION ============ */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .ticker-track{animation:none;transform:none}
+  .ticker{overflow-x:auto}
+  [data-reveal]{opacity:1!important;transform:none!important}
+  .tile:hover img,.tile:focus-visible img,.scan:hover img{transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳至主要內容</a>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ 1. NAV ============ -->
+<nav class="nav" id="nav" data-od-id="nav" aria-label="主要導覽">
+  <div class="nav-in">
+    <a class="brand" href="#hero" aria-label="相聚場 首頁">
+      <span class="seal" aria-hidden="true">相</span>
+      <span>
+        <span class="brand-name">相聚場</span>
+        <span class="brand-en">COMMUNITY CANTEEN</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="開啟選單"><span></span></button>
+    <div class="nav-links" id="navLinks">
+      <a href="#park">園區</a>
+      <a href="#story">故事</a>
+      <a href="#craft">功夫</a>
+      <a href="#menu">菜單</a>
+      <a href="#wall">照片牆</a>
+      <a href="#gather">相聚</a>
+      <a href="#visit">造訪</a>
+      <a class="nav-tel" href="tel:062632977">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h3l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.5 5.7 2 2 0 0 1 6.5 3.5Z"/></svg>
+        <span class="num">(06) 263-2977</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ============ 2. HERO ============ -->
+<section class="hero" id="hero" data-od-id="hero" aria-label="相聚場主視覺">
+  <img class="hero-img" src="assets/img/env-hall.jpg" alt="相聚場挑高木屋頂的用餐大廳，客人正在座位上用餐" width="1200" height="798" fetchpriority="high" decoding="async">
+  <div class="hero-scrim" aria-hidden="true"></div>
+
+  <div class="hero-in">
+    <div class="hero-copy">
+      <p class="hero-eyebrow">臺南 · 水交社文化園區</p>
+      <p class="hero-en">COMMUNITY CANTEEN</p>
+      <h1 class="hero-tag">相聚有你，<br>更美好。</h1>
+      <p class="hero-sub">在府城南郊的水交社眷村文化園區中，質樸不假裝飾的眷落。</p>
+      <p class="hero-verbs">Eat · Meet · Repeat</p>
+      <div class="hero-cta">
+        <a class="btn btn-seal" href="#menu">看菜單</a>
+        <a class="btn btn-ghost" href="#gather">包場相聚</a>
+      </div>
+    </div>
+
+    <div class="hero-vert" aria-hidden="true">
+      <span class="seal">相</span>
+      <span class="vert">相聚場</span>
+    </div>
+  </div>
+
+  <p class="hero-scroll" aria-hidden="true">SCROLL ↓</p>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <div class="ticker-seq">
+        <span>興中街 <span class="num">116</span> 巷 <span class="num">7</span> 號</span>
+        <span><span class="num">(06) 263-2977</span></span>
+        <span><span class="num">11:30 – 20:30</span></span>
+        <span>週二、週三公休</span>
+        <span>Google <span class="num">4.7</span>★ <span class="num">1,166</span> 則評論</span>
+        <span>三合院眷舍</span>
+        <span>手工拉麵</span>
+      </div>
+      <div class="ticker-seq">
+        <span>興中街 <span class="num">116</span> 巷 <span class="num">7</span> 號</span>
+        <span><span class="num">(06) 263-2977</span></span>
+        <span><span class="num">11:30 – 20:30</span></span>
+        <span>週二、週三公休</span>
+        <span>Google <span class="num">4.7</span>★ <span class="num">1,166</span> 則評論</span>
+        <span>三合院眷舍</span>
+        <span>手工拉麵</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ============ 3. STATEMENT ============ -->
+<section id="statement" data-od-id="statement" class="sec-pad-lg paper-glow" aria-labelledby="statement-h">
+  <div class="wrap">
+    <div class="stmt-grid">
+      <div class="stmt-kick" aria-hidden="true"><span class="vert">自述</span></div>
+      <div class="stmt-body">
+        <h2 id="statement-h" class="stmt-quote" data-reveal>在府城南郊的水交社眷村文化園區中，<br><em>質樸不假裝飾的眷落。</em></h2>
+        <div class="stmt-tail" data-reveal>
+          <p>用心意煮出新意，用美味留下回味。</p>
+          <p>一碗麵、一張木桌、一個下午。這裡不販賣懷舊，只是把飯好好煮完。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. STORY ============ -->
+<section id="story" data-od-id="story" class="sec-pad" aria-labelledby="story-h">
+  <div class="wrap">
+    <div class="story-grid">
+      <div class="story-aside">
+        <span class="vert" id="story-h">相聚場的故事</span>
+        <span class="seal" aria-hidden="true">聚</span>
+      </div>
+
+      <div class="story-main">
+        <figure class="story-fig" data-reveal>
+          <img src="assets/img/env-courtyard.jpg" alt="三合院中庭的迴廊，白牆與木構屋簷" width="1200" height="798" loading="lazy" decoding="async">
+          <figcaption class="cap">三合院中庭迴廊 — 保留眷舍原貌，沒有過多修飾</figcaption>
+        </figure>
+
+        <p class="body" data-reveal>眷村，是一個跨世代的共同記憶。空軍與眷戶橫越海峽來到臺灣落地生根，把老家的味道裝進行李，用食物思念家鄉。灶上那一鍋湯，煮的從來不只是湯。</p>
+
+        <p class="body" data-reveal>相聚場延續這份思念，把它融進現代的養生趨勢裡——讓回憶不停止在過往，而是在當下創造新的眷村記憶。湯頭用中藥材、蔬果與辛香料慢慢熬，牛肉悶燉慢熟，麵條手工現拉。做法老實，也就這樣而已。</p>
+
+        <p class="body" data-reveal>我們待在水交社眷舍的三合院裡。空間明亮挑高、簡單潔淨，上方木製屋頂結構原封不動地留著。日光從天井落下來，桌與桌之間留著能說話的距離。有人說，相聚場最迷人的地方不只是吃飯，而是在眷村老屋裡吃飯的感覺——我們同意。</p>
+
+        <p class="body" data-reveal>店名裡的「相聚」是字面上的意思。約人、坐下、把麵吃完，然後下次再約。Eat · Meet · Repeat。</p>
+
+        <aside class="note" data-reveal>
+          「水交」二字，典出《莊子·山木》：<b>「君子之交淡若水」</b>。這片土地的古地名叫「桶盤淺」，位於府城南門外；日治時期，這裡是臺南海軍航空隊軍官與眷屬的宿舍群。名字比建築更早到。
+          <span class="src">《莊子·山木》／水交社文化園區</span>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. TIMELINE ============ -->
+<section id="timeline" data-od-id="timeline" class="sec-pad-lg on-night" aria-labelledby="timeline-h">
+  <img class="tl-bg" src="assets/img/park-f5e.jpg" alt="" aria-hidden="true" width="1200" height="798" loading="lazy" decoding="async">
+  <div class="tl-bg-ov" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <div class="tl-head">
+      <div>
+        <p class="kicker" data-reveal>時間層</p>
+        <h2 class="h-sec" id="timeline-h" data-reveal>八十餘年，<br>四個轉身。</h2>
+      </div>
+      <p class="lede" data-reveal style="max-width:26em">從海軍航空隊的宿舍群，到雷虎的故鄉，再到市定古蹟與文化園區。相聚場所在的這片眷舍，比大多數餐廳的菜單更有年份。</p>
+    </div>
+
+    <ol class="tl-grid">
+      <li class="tl-item" data-reveal>
+        <span class="tl-year num">1937</span>
+        <h3 class="tl-label">昭和十二年・宿舍落成</h3>
+        <p class="tl-text">水交社宿舍群約興建於此時，作為日治時期臺南海軍航空隊軍官與眷屬宿舍，是臺灣現今保存完整的航空隊武官宿舍。</p>
+      </li>
+      <li class="tl-item" data-reveal>
+        <span class="tl-year num">1953</span>
+        <h3 class="tl-label">雷虎的故鄉</h3>
+        <p class="tl-text">空軍成立「雷虎特技小組」，飛官與眷屬就住在這裡，這片眷村因而被稱作「雷虎的故鄉」與「飛機眷村」。</p>
+      </li>
+      <li class="tl-item" data-reveal>
+        <span class="tl-year num">2004</span>
+        <h3 class="tl-label">指定為市定古蹟</h3>
+        <p class="tl-text">臺南市政府以「原水交社宿舍群暨文化景觀」指定為市定古蹟，老屋的命運自此被寫進法規裡。</p>
+      </li>
+      <li class="tl-item" data-reveal>
+        <span class="tl-year num">2019</span>
+        <h3 class="tl-label">園區開幕・八大主題館</h3>
+        <p class="tl-text">年底「水交社文化園區」正式開幕，規劃八大主題館；相聚場落在其中一進三合院眷舍裡。</p>
+      </li>
+    </ol>
+
+    <div class="tl-foot" data-reveal>
+      <span class="badge"><span class="num">2020</span> 經濟部金點設計獎・空間設計類標章</span>
+      <span class="badge"><span class="num">2022</span> 水交社宿舍群獲全球卓越建設獎銀獎</span>
+    </div>
+  </div>
+</section>
+<!-- ============ 6. PARK ============ -->
+<section id="park" data-od-id="park" class="sec-pad paper-glow" aria-labelledby="park-h">
+  <div class="wrap">
+    <div class="park-grid">
+      <div>
+        <p class="kicker" data-reveal>水交社文化園區</p>
+        <h2 class="h-sec" id="park-h" data-reveal style="margin-top:.9rem">不只是一家麵館，<br>是一座園區。</h2>
+        <p class="lede" data-reveal style="margin-top:1.6rem">吃完麵別急著走。八大主題館散在這片被譽為「全臺最美的眷村」的老宿舍群裡，從歷史、書店、書房到親子飛行，一個下午剛剛好。</p>
+
+        <ol class="halls" data-reveal>
+          <li class="hall">
+            <div class="hall-row"><span class="hall-n num">01</span><span class="hall-name">水交社歷史館</span><span class="leader" aria-hidden="true"></span><span class="hall-d">從桶盤淺到雷虎的故鄉，一條聚落的時間線</span></div>
+          </li>
+          <li class="hall">
+            <div class="hall-row"><span class="hall-n num">02</span><span class="hall-name">AIR 臺南館</span><span class="leader" aria-hidden="true"></span><span class="hall-d">以飛行為題，看見臺南上空的另一種視角</span></div>
+          </li>
+          <li class="hall">
+            <div class="hall-row"><span class="hall-n num">03</span><span class="hall-name">眷村主題館—敝墟書店</span><span class="leader" aria-hidden="true"></span><span class="hall-d">眷村日常與書架並置的一間店</span></div>
+            <p class="hall-note">「敝」為謙稱，「墟」指聚落；音同「必需」——生活需要文化，文化需要閱讀。</p>
+          </li>
+          <li class="hall">
+            <div class="hall-row"><span class="hall-n num">04</span><span class="hall-name">和通蔣勳書房</span><span class="leader" aria-hidden="true"></span><span class="hall-d">以書房之名，安放一段閱讀的餘裕</span></div>
+          </li>
+          <li class="hall">
+            <div class="hall-row"><span class="hall-n num">05</span><span class="hall-name">水交社展演館</span><span class="leader" aria-hidden="true"></span><span class="hall-d">園區展演與活動的主要場地</span></div>
+          </li>
+          <li class="hall">
+            <div class="hall-row"><span class="hall-n num">06</span><span class="hall-name">飛行親子館</span><span class="leader" aria-hidden="true"></span><span class="hall-d">為小孩準備的飛行主題空間</span></div>
+          </li>
+          <li class="hall">
+            <div class="hall-row"><span class="hall-n num">07</span><span class="hall-name">藝術特展館</span><span class="leader" aria-hidden="true"></span><span class="hall-d">檔期輪替的特展空間</span></div>
+          </li>
+          <li class="hall">
+            <div class="hall-row"><span class="hall-n num">08</span><span class="hall-name">文學沙龍館</span><span class="leader" aria-hidden="true"></span><span class="hall-d">文字、講座與慢下來的談話</span></div>
+          </li>
+        </ol>
+
+        <div class="park-note">
+          <p class="body" data-reveal>戶外草地上停著一架 <span class="num">F-5E</span> 戰鬥機，機身漆著東南亞迷彩塗裝；不遠處是裝置藝術「榕樹下的飛行記憶」。老樹、老屋與一架不會再起飛的飛機，構成園區最安靜的一段路。</p>
+          <p class="body" data-reveal>園區也曾展出顏振發的手繪電影看板——BBC 稱他為「臺灣最後一位手繪電影海報畫家」。走道邊的原生植栽是紫葉狼尾草、白茅與細葉芒，風一吹就整片倒過去。</p>
+        </div>
+      </div>
+
+      <div class="park-cluster" data-reveal>
+        <figure class="pc-a">
+          <img src="assets/img/park-poster.jpg" alt="園區展出的顏振發手繪電影看板" width="1200" height="798" loading="lazy" decoding="async">
+          <figcaption>顏振發 手繪電影看板</figcaption>
+        </figure>
+        <figure class="pc-b">
+          <img src="assets/img/park-museum.jpg" alt="主題館室內的展示空間，牆面與展櫃陳列著文物" width="1200" height="798" loading="lazy" decoding="async">
+          <figcaption>主題館內部</figcaption>
+        </figure>
+        <figure class="pc-c">
+          <img src="assets/img/park-tree.jpg" alt="園區綠地上的大樹與草坡" width="1200" height="798" loading="lazy" decoding="async">
+          <figcaption>園區綠地</figcaption>
+        </figure>
+        <figure class="pc-d">
+          <img src="assets/img/park-stele.jpg" alt="園區入口的門柱、解說牌與樹蔭下走過的遊客" width="1000" height="666" loading="lazy" decoding="async">
+          <figcaption>園區入口與解說牌</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. CRAFT ============ -->
+<section id="craft" data-od-id="craft" class="sec-pad on-night" aria-labelledby="craft-h">
+  <div class="wrap">
+    <div class="craft-grid">
+      <figure class="craft-fig" data-reveal>
+        <img src="assets/img/brand-card.jpg" alt="師傅在不鏽鋼廚房裡，於爐火前手持炒鍋掌鍋" width="960" height="540" loading="lazy" decoding="async">
+        <figcaption>後場 — 湯要熬，肉要燉，麵要拉</figcaption>
+      </figure>
+
+      <div>
+        <p class="kicker" data-reveal>功夫</p>
+        <h2 class="h-sec" id="craft-h" data-reveal style="margin-top:.9rem">三件事，<br>沒有捷徑。</h2>
+
+        <ol class="claims">
+          <li class="claim" data-reveal>
+            <span class="claim-n num">01</span>
+            <div>
+              <h3>湯頭</h3>
+              <p>以中藥材、蔬果與辛香料精心熬煮，<em>絕不使用現成調理包</em>。時間是唯一的添加物。</p>
+            </div>
+          </li>
+          <li class="claim" data-reveal>
+            <span class="claim-n num">02</span>
+            <div>
+              <h3>牛肉</h3>
+              <p>採悶燉慢熟，選半筋半肉的牛腱；Ｑ嫩入味、不乾柴，筋的部分咬下去還帶著彈性。</p>
+            </div>
+          </li>
+          <li class="claim" data-reveal>
+            <span class="claim-n num">03</span>
+            <div>
+              <h3>麵條</h3>
+              <p>手工拉麵，粗麵，Ｑ彈有嚼勁。撈起來會回彈的那種，湯拌上去也不糊。</p>
+            </div>
+          </li>
+        </ol>
+
+        <blockquote class="craft-quote" data-reveal>
+          <p>「湯頭雖然是紅燒，但並不是很油又很鹹的那種路數，喝起來有種甘醇的感覺，中藥材的香氣都融入裡頭，然後伴隨著薑的辛香味。」</p>
+          <footer>— 老錢的老巢</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ============ 8. MENU ============ -->
+<section id="menu" data-od-id="menu" class="sec-pad paper-glow" aria-labelledby="menu-h">
+  <div class="wrap">
+    <div class="menu-grid">
+      <div>
+        <p class="kicker" data-reveal>菜單</p>
+        <h2 class="h-sec" id="menu-h" data-reveal style="margin-top:.9rem">八款功夫湯麵，<br>五款職人乾拌麵。</h2>
+
+        <ol class="top5" data-reveal aria-label="精選 TOP 5">
+          <li class="dish">
+            <span class="rank lat">NO.1</span>
+            <span class="dish-name">老薑軍紅燒牛肉麵</span>
+            <span class="leader" aria-hidden="true"></span>
+            <span class="dish-price num">$240<small>加麵 $255</small></span>
+          </li>
+          <li class="dish">
+            <span class="rank lat">NO.2</span>
+            <span class="dish-name">清燉牛肉麵</span>
+            <span class="leader" aria-hidden="true"></span>
+            <span class="dish-price num">$220<small>加麵 $235</small></span>
+          </li>
+          <li class="dish">
+            <span class="rank lat">NO.3</span>
+            <span class="dish-name">主廚秘製原汁乾拌麵</span>
+            <span class="leader" aria-hidden="true"></span>
+            <span class="dish-price num">$190<small>套餐 $260</small></span>
+          </li>
+          <li class="dish">
+            <span class="rank lat">NO.4</span>
+            <span class="dish-name">麵茶豆腐酪刨冰</span>
+            <span class="leader" aria-hidden="true"></span>
+            <span class="dish-price num">$150</span>
+          </li>
+          <li class="dish">
+            <span class="rank lat">NO.5</span>
+            <span class="dish-name">芝麻豆腐酪刨冰</span>
+            <span class="leader" aria-hidden="true"></span>
+            <span class="dish-price num">$150</span>
+          </li>
+        </ol>
+
+        <div class="cats" data-reveal>
+          <div class="cat">
+            <h4>乾麵</h4>
+            <ul>
+              <li><b>主廚秘製原汁乾拌麵</b><span class="num">190</span></li>
+              <li><b>1963 鳶尾火蔥乾拌麵</b><span class="num">190</span></li>
+              <li><b>老薑麻油乾拌麵</b><span class="num">190</span></li>
+              <li><b>天府香麻乾拌麵（微辣）</b><span class="num">190</span></li>
+              <li><b>香麻究極乾拌麵（辣）</b><span class="num">210</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h4>拌飯</h4>
+            <ul>
+              <li><b>燒肉野菇拌飯</b><span class="num">230</span></li>
+              <li><b>1963 鳶尾火蔥拌飯</b><span class="num">190</span></li>
+              <li><b>經典麻油拌飯</b><span class="num">190</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h4>熱炒・小食</h4>
+            <ul>
+              <li><b>私藏香煎蔥蛋</b><span class="num">120</span></li>
+              <li><b>時蔬總匯</b><span class="num">150</span></li>
+              <li><b>清燉叉燒肉</b><span class="num">120</span></li>
+              <li><b>清燉牛腱肉</b><span class="num">150</span></li>
+              <li><b>火燒蔥爆肉片</b><span class="num">150</span></li>
+              <li><b>麻油蔥煸肉片</b><span class="num">150</span></li>
+            </ul>
+          </div>
+          <div class="cat">
+            <h4>冰品</h4>
+            <ul>
+              <li><b>時光麵茶豆腐酪刨冰</b><span class="num">150</span></li>
+              <li><b>懷舊芝麻豆腐酪刨冰</b><span class="num">150</span></li>
+              <li><b>慢想著檸冰山</b><span class="num">120</span></li>
+              <li><b>芒著戀愛冰山</b><span class="num">120</span></li>
+              <li><b>莓麗人生冰山</b><span class="num">120</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu-notes" data-reveal>
+          <p><strong>加麵</strong> <span class="num">+$15</span>。乾麵與拌飯皆可升級套餐。</p>
+          <p><strong>套餐附餐可選：</strong>香麻鴨血豆腐／豚骨綜合野菇／招牌紹興蕈菇。</p>
+          <p>飲品：香檸冬瓜露、2028 烏龍、包種茶、冬瓜茶。小菜：涼拌海帶絲。</p>
+        </div>
+
+        <div class="menu-actions" data-reveal>
+          <a class="link-arrow" href="https://noodleart.oinapp.com/" target="_blank" rel="noopener">
+            完整菜單
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="scans" data-reveal>
+          <p class="cap">原始菜單看板 — 點擊放大</p>
+          <div class="scans-row">
+            <button class="scan" type="button" data-lb data-group="menu" data-full="assets/img/menu-cover.jpg" data-cap="菜單目錄與精選 TOP 5 頁">
+              <img src="assets/img/menu-cover.jpg" alt="相聚場菜單目錄與精選 TOP 5 頁" width="1600" height="1132" loading="lazy" decoding="async">
+            </button>
+            <button class="scan" type="button" data-lb data-group="menu" data-full="assets/img/menu-dry.jpg" data-cap="職人乾拌麵頁">
+              <img src="assets/img/menu-dry.jpg" alt="相聚場菜單乾麵頁" width="1600" height="1139" loading="lazy" decoding="async">
+            </button>
+            <button class="scan" type="button" data-lb data-group="menu" data-full="assets/img/menu-rice.jpg" data-cap="拌飯與熱炒頁">
+              <img src="assets/img/menu-rice.jpg" alt="相聚場菜單拌飯與熱炒頁" width="1600" height="1130" loading="lazy" decoding="async">
+            </button>
+            <button class="scan" type="button" data-lb data-group="menu" data-full="assets/img/menu-ice.jpg" data-cap="冰品頁">
+              <img src="assets/img/menu-ice.jpg" alt="相聚場菜單冰品頁" width="1600" height="1133" loading="lazy" decoding="async">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-stack" data-reveal>
+        <figure class="ms-1">
+          <img src="assets/img/food-beef-2.jpg" alt="筷子夾起半筋半肉的牛腱肉特寫" width="1000" height="750" loading="lazy" decoding="async">
+          <figcaption>半筋半肉牛腱 — 悶燉慢熟</figcaption>
+        </figure>
+        <figure class="ms-2">
+          <img src="assets/img/food-dry-1.jpg" alt="主廚秘製乾拌麵，配上溏心蛋" width="1000" height="750" loading="lazy" decoding="async">
+          <figcaption>主廚秘製原汁乾拌麵</figcaption>
+        </figure>
+        <figure class="ms-3">
+          <img src="assets/img/food-ice-2.jpg" alt="芝麻豆腐酪刨冰，淋上煉乳與紅豆" width="1000" height="750" loading="lazy" decoding="async">
+          <figcaption>懷舊芝麻豆腐酪刨冰</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ============ 9. PHOTO WALL ============ -->
+<section id="wall" data-od-id="wall" class="sec-pad on-night" aria-labelledby="wall-h">
+  <div class="wrap">
+    <div class="wall-head">
+      <div>
+        <p class="kicker" data-reveal>照片牆</p>
+        <h2 class="h-sec" id="wall-h" data-reveal style="margin-top:.9rem">一整個下午的樣子。</h2>
+      </div>
+      <p class="lede" data-reveal style="max-width:24em">食物、空間、園區、還有坐在裡面的人。點任一張可放大。</p>
+    </div>
+
+    <div class="filters" role="group" aria-label="照片分類篩選">
+      <button type="button" data-filter="all" aria-pressed="true">全部</button>
+      <button type="button" data-filter="food" aria-pressed="false">美食</button>
+      <button type="button" data-filter="space" aria-pressed="false">空間</button>
+      <button type="button" data-filter="park" aria-pressed="false">園區</button>
+      <button type="button" data-filter="meet" aria-pressed="false">相聚</button>
+    </div>
+    <p class="wall-count" id="wallCount" role="status" aria-live="polite"></p>
+
+    <div class="wall-grid" id="wallGrid">
+      <button class="tile sp2x2" type="button" data-cat="food" data-lb data-group="wall" data-full="assets/img/food-beef-1.jpg" data-cap="老薑軍紅燒牛肉麵"><img src="assets/img/food-beef-1.jpg" alt="紅燒牛肉麵，湯面浮著青蔥與牛腱" width="1000" height="750" loading="lazy" decoding="async"><span class="tcap">老薑軍紅燒牛肉麵</span></button>
+      <button class="tile sp2x1" type="button" data-cat="space" data-lb data-group="wall" data-full="assets/img/env-hall.jpg" data-cap="挑高木屋頂的用餐大廳"><img src="assets/img/env-hall.jpg" alt="挑高木屋頂的用餐大廳，客人正在用餐" width="1200" height="798" loading="lazy" decoding="async"><span class="tcap">挑高木屋頂用餐大廳</span></button>
+      <button class="tile sp1x2" type="button" data-cat="food" data-lb data-group="wall" data-full="assets/img/food-ice-3.jpg" data-cap="豆腐酪刨冰特寫"><img src="assets/img/food-ice-3.jpg" alt="豆腐酪刨冰的直式特寫，冰上淋著煉乳" width="1000" height="1500" loading="lazy" decoding="async"><span class="tcap">豆腐酪刨冰</span></button>
+      <button class="tile" type="button" data-cat="park" data-lb data-group="wall" data-full="assets/img/park-f5e.jpg" data-cap="戶外展示的 F-5E 戰鬥機"><img src="assets/img/park-f5e.jpg" alt="園區戶外展示的 F-5E 戰鬥機，東南亞迷彩塗裝" width="1200" height="798" loading="lazy" decoding="async"><span class="tcap">F-5E 戰鬥機</span></button>
+      <button class="tile" type="button" data-cat="food" data-lb data-group="wall" data-full="assets/img/food-beef-2.jpg" data-cap="筷子夾起牛腱肉"><img src="assets/img/food-beef-2.jpg" alt="筷子夾起半筋半肉的牛腱肉" width="1000" height="750" loading="lazy" decoding="async"><span class="tcap">半筋半肉牛腱</span></button>
+      <button class="tile sp2x1" type="button" data-cat="space" data-lb data-group="wall" data-full="assets/img/env-courtyard.jpg" data-cap="三合院中庭迴廊"><img src="assets/img/env-courtyard.jpg" alt="三合院中庭迴廊，白牆與木構屋簷" width="1200" height="798" loading="lazy" decoding="async"><span class="tcap">三合院中庭迴廊</span></button>
+      <button class="tile sp1x2" type="button" data-cat="food" data-lb data-group="wall" data-full="assets/img/people-eat.jpg" data-cap="麵聚場 · 臺南水交社文化園區"><img src="assets/img/people-eat.jpg" alt="直式圖卡：牛腱肉片鋪在麵上的特寫，配上「該找時間來趟 麵聚場 臺南水交社文化園區」字樣" width="540" height="960" loading="lazy" decoding="async"><span class="tcap">該找時間來趟</span></button>
+      <button class="tile" type="button" data-cat="food" data-lb data-group="wall" data-full="assets/img/food-dry-1.jpg" data-cap="乾拌麵配溏心蛋"><img src="assets/img/food-dry-1.jpg" alt="乾拌麵搭配溏心蛋" width="1000" height="750" loading="lazy" decoding="async"><span class="tcap">職人乾拌麵</span></button>
+      <button class="tile sp2x2" type="button" data-cat="park" data-lb data-group="wall" data-full="assets/img/park-poster.jpg" data-cap="顏振發手繪電影看板"><img src="assets/img/park-poster.jpg" alt="園區展出的顏振發手繪電影看板" width="1200" height="798" loading="lazy" decoding="async"><span class="tcap">顏振發手繪電影看板</span></button>
+      <button class="tile sp2x1" type="button" data-cat="space" data-lb data-group="wall" data-full="assets/img/env-kitchen.jpg" data-cap="桌邊 QR Code 點餐立牌與桌花"><img src="assets/img/env-kitchen.jpg" alt="桌上的桌邊點餐 QR Code 立牌，旁邊是筷套與一束桌花" width="960" height="540" loading="lazy" decoding="async"><span class="tcap">桌邊掃碼點餐</span></button>
+      <button class="tile" type="button" data-cat="food" data-lb data-group="wall" data-full="assets/img/food-ice-2.jpg" data-cap="芝麻豆腐酪刨冰"><img src="assets/img/food-ice-2.jpg" alt="芝麻豆腐酪刨冰，淋上煉乳與紅豆" width="1000" height="750" loading="lazy" decoding="async"><span class="tcap">芝麻豆腐酪刨冰</span></button>
+      <button class="tile sp2x2" type="button" data-cat="park" data-lb data-group="wall" data-full="assets/img/park-tree.jpg" data-cap="園區綠地大樹"><img src="assets/img/park-tree.jpg" alt="園區綠地上的大樹與草坡" width="1200" height="798" loading="lazy" decoding="async"><span class="tcap">園區綠地大樹</span></button>
+      <button class="tile" type="button" data-cat="space" data-lb data-group="wall" data-full="assets/img/env-seats.jpg" data-cap="室內座位區"><img src="assets/img/env-seats.jpg" alt="店內的室內座位區" width="1000" height="750" loading="lazy" decoding="async"><span class="tcap">室內座位區</span></button>
+      <button class="tile" type="button" data-cat="food" data-lb data-group="wall" data-full="assets/img/food-tonkotsu.jpg" data-cap="豚骨濃白原肉片湯麵"><img src="assets/img/food-tonkotsu.jpg" alt="青花碗盛裝的豚骨白湯麵" width="1000" height="750" loading="lazy" decoding="async"><span class="tcap">豚骨濃白湯麵</span></button>
+      <button class="tile sp2x1" type="button" data-cat="meet" data-lb data-group="wall" data-full="assets/img/event-poster.jpg" data-cap="兩人在店內一起吃時光麵茶奶酪冰"><img src="assets/img/event-poster.jpg" alt="兩位客人在店內座位上一起吃時光麵茶奶酪冰" width="960" height="540" loading="lazy" decoding="async"><span class="tcap">一起把冰吃完</span></button>
+      <button class="tile" type="button" data-cat="park" data-lb data-group="wall" data-full="assets/img/park-museum.jpg" data-cap="主題館室內的展示空間"><img src="assets/img/park-museum.jpg" alt="主題館室內的展示空間，牆面與展櫃陳列著文物" width="1200" height="798" loading="lazy" decoding="async"><span class="tcap">主題館內部</span></button>
+      <button class="tile" type="button" data-cat="food" data-lb data-group="wall" data-full="assets/img/food-beef-3.jpg" data-cap="紅燒牛肉麵，筷子挑起手工拉麵"><img src="assets/img/food-beef-3.jpg" alt="紅燒牛肉麵，筷子從湯裡挑起手工拉麵" width="1000" height="750" loading="lazy" decoding="async"><span class="tcap">紅燒牛肉麵</span></button>
+      <button class="tile sp2x1" type="button" data-cat="space" data-lb data-group="wall" data-full="assets/img/env-bar.jpg" data-cap="吧台高腳椅區"><img src="assets/img/env-bar.jpg" alt="店內吧台高腳椅座位區" width="1000" height="750" loading="lazy" decoding="async"><span class="tcap">吧台高腳椅區</span></button>
+      <button class="tile sp2x1" type="button" data-cat="meet" data-lb data-group="wall" data-full="assets/img/event-lantern.jpg" data-cap="相聚祭：街頭演出　2024 Sat. 09/14"><img src="assets/img/event-lantern.jpg" alt="相聚祭街頭演出海報，標示 2024 年 9 月 14 日星期六 17:30 至 19:30" width="960" height="540" loading="lazy" decoding="async"><span class="tcap">相聚祭：街頭演出</span></button>
+      <button class="tile" type="button" data-cat="park" data-lb data-group="wall" data-full="assets/img/park-stele.jpg" data-cap="園區入口的門柱與解說牌"><img src="assets/img/park-stele.jpg" alt="園區入口的門柱、解說牌與樹蔭下走過的遊客" width="1000" height="666" loading="lazy" decoding="async"><span class="tcap">園區入口</span></button>
+      <button class="tile sp2x2" type="button" data-cat="food" data-lb data-group="wall" data-full="assets/img/food-noodle-egg.jpg" data-cap="湯麵配溏心蛋與青江菜"><img src="assets/img/food-noodle-egg.jpg" alt="湯麵搭配溏心蛋與青江菜" width="1000" height="750" loading="lazy" decoding="async"><span class="tcap">湯麵・溏心蛋</span></button>
+      <button class="tile" type="button" data-cat="space" data-lb data-group="wall" data-full="assets/img/env-table.jpg" data-cap="木桌座位"><img src="assets/img/env-table.jpg" alt="店內的木桌座位" width="1200" height="800" loading="lazy" decoding="async"><span class="tcap">木桌座位</span></button>
+      <button class="tile sp2x1" type="button" data-cat="park" data-lb data-group="wall" data-full="assets/img/park-tour.jpg" data-cap="樹下導覽"><img src="assets/img/park-tour.jpg" alt="園區大樹下的導覽人群" width="1200" height="798" loading="lazy" decoding="async"><span class="tcap">樹下導覽</span></button>
+      <button class="tile" type="button" data-cat="food" data-lb data-group="wall" data-full="assets/img/food-rice.jpg" data-cap="拌飯套餐"><img src="assets/img/food-rice.jpg" alt="拌飯套餐與附餐小菜" width="1200" height="800" loading="lazy" decoding="async"><span class="tcap">拌飯套餐</span></button>
+      <button class="tile" type="button" data-cat="space" data-lb data-group="wall" data-full="assets/img/env-facade.jpg" data-cap="白色眷舍外牆"><img src="assets/img/env-facade.jpg" alt="相聚場所在眷舍的白色外牆" width="1200" height="798" loading="lazy" decoding="async"><span class="tcap">白色眷舍外牆</span></button>
+      <button class="tile" type="button" data-cat="park" data-lb data-group="wall" data-full="assets/img/park-house.jpg" data-cap="眷舍外觀"><img src="assets/img/park-house.jpg" alt="園區內的眷舍建築外觀" width="1200" height="798" loading="lazy" decoding="async"><span class="tcap">眷舍外觀</span></button>
+      <button class="tile sp2x1" type="button" data-cat="food" data-lb data-group="wall" data-full="assets/img/food-ice-1.jpg" data-cap="豆腐酪刨冰與紅豆配料"><img src="assets/img/food-ice-1.jpg" alt="桌上的豆腐酪刨冰，旁邊擺著紅豆配料" width="1351" height="760" loading="lazy" decoding="async"><span class="tcap">兩碗豆腐酪刨冰</span></button>
+      <button class="tile" type="button" data-cat="meet" data-lb data-group="wall" data-full="assets/img/env-qr.jpg" data-cap="活動前擺在石紋長桌上的紅橘紙燈籠"><img src="assets/img/env-qr.jpg" alt="紅色與橘色的紙燈籠散放在石紋長桌上" width="960" height="540" loading="lazy" decoding="async"><span class="tcap">紅橘紙燈籠</span></button>
+      <button class="tile" type="button" data-cat="park" data-lb data-group="wall" data-full="assets/img/park-shop.jpg" data-cap="園區裡的黃色服務攤車"><img src="assets/img/park-shop.jpg" alt="園區戶外一台漆成黃色的服務攤車，車身有圓形徽章" width="1200" height="798" loading="lazy" decoding="async"><span class="tcap">園區服務攤車</span></button>
+      <button class="tile sp2x1" type="button" data-cat="meet" data-lb data-group="wall" data-full="assets/img/sign-gate.jpg" data-cap="園區入口的相聚場門樓招牌"><img src="assets/img/sign-gate.jpg" alt="園區入口的水泥門樓，上方掛著「相聚場」招牌與 Eat · Meet · Repeat 標語" width="1000" height="750" loading="lazy" decoding="async"><span class="tcap">Eat · Meet · Repeat</span></button>
+      <button class="tile" type="button" data-cat="food" data-lb data-group="wall" data-full="assets/img/food-beef-4.jpg" data-cap="老薑軍紅燒牛肉麵實拍"><img src="assets/img/food-beef-4.jpg" alt="老薑軍紅燒牛肉麵的實拍畫面" width="1200" height="800" loading="lazy" decoding="async"><span class="tcap">老薑軍紅燒牛肉麵</span></button>
+      <button class="tile" type="button" data-cat="park" data-lb data-group="wall" data-full="assets/img/park-ruin.jpg" data-cap="老建築遺構"><img src="assets/img/park-ruin.jpg" alt="園區中保留的老建築遺構" width="1000" height="666" loading="lazy" decoding="async"><span class="tcap">老建築遺構</span></button>
+      <button class="tile" type="button" data-cat="food" data-lb data-group="wall" data-full="assets/img/food-soup-1.jpg" data-cap="功夫湯麵"><img src="assets/img/food-soup-1.jpg" alt="一碗功夫湯麵" width="1000" height="750" loading="lazy" decoding="async"><span class="tcap">功夫湯麵</span></button>
+      <button class="tile" type="button" data-cat="space" data-lb data-group="wall" data-full="assets/img/env-kiosk.jpg" data-cap="自助點餐機"><img src="assets/img/env-kiosk.jpg" alt="店內的自助點餐機" width="1000" height="750" loading="lazy" decoding="async"><span class="tcap">自助點餐機</span></button>
+      <button class="tile" type="button" data-cat="park" data-lb data-group="wall" data-full="assets/img/park-exhibit.jpg" data-cap="展館展板"><img src="assets/img/park-exhibit.jpg" alt="主題館內的展覽展板" width="1200" height="798" loading="lazy" decoding="async"><span class="tcap">展館展板</span></button>
+      <button class="tile" type="button" data-cat="food" data-lb data-group="wall" data-full="assets/img/food-dry-2.jpg" data-cap="涼拌海帶絲・套餐附餐小菜"><img src="assets/img/food-dry-2.jpg" alt="白瓷盤盛裝的涼拌海帶絲小菜" width="1200" height="800" loading="lazy" decoding="async"><span class="tcap">涼拌海帶絲</span></button>
+      <button class="tile" type="button" data-cat="meet" data-lb data-group="wall" data-full="assets/img/sign-board.jpg" data-cap="水交社眷村食堂・相聚場 宣傳圖卡"><img src="assets/img/sign-board.jpg" alt="相聚場宣傳圖卡，寫著水交社眷村食堂・相聚場，並排著餐點照片" width="1200" height="750" loading="lazy" decoding="async"><span class="tcap">水交社眷村食堂・相聚場</span></button>
+      <button class="tile sp2x1" type="button" data-cat="meet" data-lb data-group="wall" data-full="assets/img/brand-banner.jpg" data-cap="相聚有你，更美好。"><img src="assets/img/brand-banner.jpg" alt="相聚場主視覺橫幅，插畫背景上寫著相聚有你更美好" width="2048" height="779" loading="lazy" decoding="async"><span class="tcap">相聚有你，更美好。</span></button>
+      <button class="tile" type="button" data-cat="space" data-lb data-group="wall" data-full="assets/img/brand-card.jpg" data-cap="師傅在爐火前掌鍋"><img src="assets/img/brand-card.jpg" alt="師傅在不鏽鋼廚房裡，於爐火前手持炒鍋掌鍋" width="960" height="540" loading="lazy" decoding="async"><span class="tcap">爐火前的後場</span></button>
+    </div>
+  </div>
+</section>
+<!-- ============ 10. TESTIMONIALS ============ -->
+<section id="voices" data-od-id="voices" class="sec-pad-lg" aria-labelledby="voices-h">
+  <div class="wrap">
+    <p class="kicker" data-reveal>見證</p>
+    <h2 class="h-sec" id="voices-h" data-reveal style="margin-top:.9rem">別人怎麼說。</h2>
+
+    <div class="q-stack">
+      <blockquote class="q q1" data-reveal>
+        <span class="q-mark lat" aria-hidden="true">“</span>
+        <p>相聚場最迷人的地方，不只是吃飯，而是在眷村老屋裡吃飯的感覺。</p>
+        <footer><b>旅遊極短篇</b>　／　部落格</footer>
+      </blockquote>
+
+      <blockquote class="q q2" data-reveal>
+        <span class="q-mark lat" aria-hidden="true">“</span>
+        <p>肉塊是半筋半肉的牛腱肉⋯⋯口感很完美，有Ｑ嫩入味的感覺，一點也不柴，肉香味十分迷人，手工的拉麵也非常Ｑ彈有勁。</p>
+        <footer><b>老錢的老巢</b>　／　qpjj.tw</footer>
+      </blockquote>
+
+      <blockquote class="q q3" data-reveal>
+        <span class="q-mark lat" aria-hidden="true">“</span>
+        <p>想不到藏身水交社文化園區的餐廳品質不錯耶！Ｑ彈有嚼勁的牛肉麵、香甜順口的刨冰表現都還不錯。</p>
+        <footer><b>涼子是也</b>　／　食尚玩家駐站部落客</footer>
+      </blockquote>
+    </div>
+
+    <ul class="stats" data-reveal aria-label="真實數據">
+      <li class="stat"><span class="num">4.7</span><span class="lbl">GOOGLE 評分</span></li>
+      <li class="stat"><span class="num">1,166</span><span class="lbl">GOOGLE 評論則數</span></li>
+      <li class="stat"><span class="num">100%</span><span class="lbl">FACEBOOK 推薦・107 則</span></li>
+      <li class="stat"><span class="num">65</span><span class="lbl">席・座位數</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 11. GATHER ============ -->
+<section id="gather" data-od-id="gather" class="sec-pad paper-glow" aria-labelledby="gather-h">
+  <div class="wrap">
+    <p class="kicker" data-reveal>包場相聚</p>
+    <h2 class="h-sec" id="gather-h" data-reveal style="margin-top:.9rem">相聚場，<br>本來就是為了相聚。</h2>
+    <p class="lede" data-reveal style="margin-top:1.6rem">名字寫在門口了。約家人、約同事、約一群走完園區還捨不得散的人——這裡有約 <span class="num">65</span> 席，和一個能坐一下午的三合院。</p>
+
+    <div class="gather-grid">
+      <div>
+        <ol class="scenes">
+          <li class="scene" data-reveal>
+            <span class="scene-n num">01</span>
+            <div>
+              <h3>家庭聚餐</h3>
+              <p>木桌、挑高屋頂、明亮不吵的空間。長輩認得眷村的樣子，小孩吃得慣刨冰。桌上 QR Code 點餐，自助取餐，沒有人需要一直起身招呼。</p>
+            </div>
+          </li>
+          <li class="scene" data-reveal>
+            <span class="scene-n num">02</span>
+            <div>
+              <h3>團體包場與餐敘</h3>
+              <p>整間三合院食堂交給一群人。部分座位下方有插座，適合帶著簡報與筆電的那種聚會；也適合單純把話講完的那種。包場請先來電洽詢日期與時段。</p>
+            </div>
+          </li>
+          <li class="scene" data-reveal>
+            <span class="scene-n num">03</span>
+            <div>
+              <h3>走完園區的那一餐</h3>
+              <p>看完八大主題館、繞過 F-5E 戰鬥機、在榕樹下坐了一會兒之後——相聚場就在園區裡，是這條路線最自然的句點。<span class="num">2024</span> 年 <span class="num">9</span> 月 <span class="num">14</span> 日，我們也曾把街頭演出辦進這片眷落，那天叫「相聚祭」。</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="price-block" data-reveal>
+          <h4>包場價目</h4>
+          <dl>
+            <div class="price-row">
+              <dt>平日・每小時</dt>
+              <dd><span class="num">NT$3,000</span><small>不抵餐費</small></dd>
+            </div>
+            <div class="price-row">
+              <dt>假日・每小時</dt>
+              <dd><span class="num">NT$6,000</span><small>可抵餐費 NT$2,000</small></dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="gather-cta" data-reveal>
+          <a class="btn btn-seal" href="tel:062632977">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 3.5h3l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.5 5.7 2 2 0 0 1 6.5 3.5Z"/></svg>
+            電話洽詢包場
+          </a>
+          <a class="btn btn-ink" href="https://www.facebook.com/shiangjuu" target="_blank" rel="noopener">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 0-10.4 8.9v-6.3H8.3V12h2.3V10c0-2.3 1.4-3.6 3.4-3.6.98 0 2 .18 2 .18v2.2h-1.1c-1.1 0-1.5.7-1.5 1.4V12h2.5l-.4 2.6h-2.1v6.3A9 9 0 0 0 21 12Z"/></svg>
+            Facebook 私訊
+          </a>
+        </div>
+      </div>
+
+      <div class="event-stack" data-reveal>
+        <figure class="es-1">
+          <img src="assets/img/event-lantern.jpg" alt="相聚祭街頭演出海報，標示 2024 年 9 月 14 日星期六 17:30 至 19:30，主題為與你相聚、與你一起歌唱" width="960" height="540" loading="lazy" decoding="async">
+          <figcaption>相聚祭：街頭演出　2024 Sat. 09/14　17:30–19:30</figcaption>
+        </figure>
+        <figure class="es-2">
+          <img src="assets/img/event-poster.jpg" alt="兩位客人在店內座位上一起吃時光麵茶奶酪冰" width="960" height="540" loading="lazy" decoding="async">
+          <figcaption>沒有活動的日子，也還是有人坐在這裡把冰吃完</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ============ 12. VISIT ============ -->
+<section id="visit" data-od-id="visit" class="on-night" aria-labelledby="visit-h">
+  <div class="wrap">
+    <div class="visit-grid">
+      <div class="visit-media">
+        <img src="assets/img/sign-gate.jpg" alt="園區入口的水泥門樓，上方掛著「相聚場」招牌與 Eat · Meet · Repeat 標語，背景是藍天與草地" width="1000" height="750" loading="lazy" decoding="async">
+      </div>
+
+      <div class="visit-info">
+        <p class="kicker" data-reveal>造訪</p>
+        <h2 class="h-sec" id="visit-h" data-reveal style="margin-top:.9rem">來吃一碗麵。</h2>
+
+        <dl class="dl" data-reveal>
+          <div>
+            <dt>地址</dt>
+            <dd>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%9B%B8%E8%81%9A%E5%A0%B4+%E6%B0%B4%E4%BA%A4%E7%A4%BE" target="_blank" rel="noopener">臺南市南區興中街 116 巷 7 號</a>
+              <small>水交社文化園區內・三合院眷舍</small>
+            </dd>
+          </div>
+          <div>
+            <dt>電話</dt>
+            <dd><a href="tel:062632977" class="num">(06) 263-2977</a></dd>
+          </div>
+          <div>
+            <dt>營業時間</dt>
+            <dd><span class="num">11:30 – 20:30</span></dd>
+          </div>
+          <div>
+            <dt>公休</dt>
+            <dd>週二、週三</dd>
+          </div>
+          <div>
+            <dt>點餐方式</dt>
+            <dd>桌上 QR Code 掃碼點餐，再至櫃檯結帳<small>自助取餐、自行回收餐具；部分座位下方有插座</small></dd>
+          </div>
+          <div>
+            <dt>交通</dt>
+            <dd>園區位於府城南門外的桶盤淺一帶<small>導航請設定「水交社文化園區」，入園後沿指標步行至相聚場</small></dd>
+          </div>
+        </dl>
+
+        <div class="socials" data-reveal>
+          <a href="https://www.facebook.com/shiangjuu" target="_blank" rel="noopener">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 0-10.4 8.9v-6.3H8.3V12h2.3V10c0-2.3 1.4-3.6 3.4-3.6.98 0 2 .18 2 .18v2.2h-1.1c-1.1 0-1.5.7-1.5 1.4V12h2.5l-.4 2.6h-2.1v6.3A9 9 0 0 0 21 12Z"/></svg>
+            Facebook
+          </a>
+          <a href="https://www.instagram.com/noodle_art_99/" target="_blank" rel="noopener">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.9"/><circle cx="17.1" cy="6.9" r="1"/></svg>
+            Instagram
+          </a>
+          <a href="https://noodleart.oinapp.com/" target="_blank" rel="noopener">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.7"/><path d="M3.3 12h17.4M12 3.3a13.5 13.5 0 0 1 0 17.4 13.5 13.5 0 0 1 0-17.4Z"/></svg>
+            官方網站
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site" data-od-id="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-mark">
+        <span class="vert">相聚場</span>
+        <span class="seal" aria-hidden="true">相</span>
+      </div>
+      <div>
+        <p class="foot-en">Community Canteen　／　水交社眷村食堂</p>
+        <p class="credit" style="margin-top:.9rem">相聚有你，更美好。　Eat · Meet · Repeat.<br>用心意煮出新意 · 用美味留下回味。</p>
+        <p class="credit"><strong style="font-weight:400;color:rgba(243,236,223,.66)">圖片來源：</strong>水交社文化園區官方網站、相聚場／麵聚場 Facebook 粉絲專頁、涼子是也 lyes.tw、老錢的老巢 qpjj.tw、Mimi 韓の旅遊指南 mimigo.tw、GoNews 行新聞。本頁為品牌宣傳提案版本，正式上線前建議替換為店家自有高解析照片。</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="foot-bot">
+      <span>© <span class="num">2026</span> 水交社眷村食堂 — 相聚場</span>
+      <span>臺南市南區興中街 116 巷 7 號　／　<span class="num">(06) 263-2977</span></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="照片檢視" hidden>
+  <div class="lb-top">
+    <span class="lb-idx num" id="lbIdx">1 / 1</span>
+    <button type="button" id="lbClose" aria-label="關閉照片檢視">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="lb-stage" id="lbStage">
+    <img id="lbImg" src="assets/img/env-hall.jpg" alt="" decoding="async">
+  </div>
+  <div class="lb-bot">
+    <p class="lb-cap" id="lbCap"></p>
+    <div class="lb-nav">
+      <button type="button" id="lbPrev" aria-label="上一張">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+      <button type="button" id="lbNext" aria-label="下一張">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---- nav toggle ---- */
+  var toggle = document.getElementById("navToggle"),
+      links  = document.getElementById("navLinks");
+  toggle.addEventListener("click", function(){
+    var open = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", String(!open));
+    toggle.setAttribute("aria-label", open ? "開啟選單" : "關閉選單");
+    links.classList.toggle("open", !open);
+  });
+  links.addEventListener("click", function(e){
+    if (e.target.closest("a") && window.innerWidth < 1024){
+      toggle.setAttribute("aria-expanded","false");
+      toggle.setAttribute("aria-label","開啟選單");
+      links.classList.remove("open");
+    }
+  });
+
+  /* ---- reveal ---- */
+  var revealables = Array.prototype.slice.call(document.querySelectorAll("[data-reveal]"));
+  if (reduce || !("IntersectionObserver" in window)) {
+    revealables.forEach(function(el){ el.classList.add("in"); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      var n = 0;
+      entries.forEach(function(en){
+        if (!en.isIntersecting) return;
+        var el = en.target;
+        setTimeout(function(){ el.classList.add("in"); }, n * 60);
+        n++;
+        io.unobserve(el);
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    revealables.forEach(function(el){ io.observe(el); });
+  }
+
+  /* ---- photo wall filter ---- */
+  var grid    = document.getElementById("wallGrid"),
+      tiles   = Array.prototype.slice.call(grid.querySelectorAll(".tile")),
+      fbtns   = Array.prototype.slice.call(document.querySelectorAll(".filters button")),
+      counter = document.getElementById("wallCount"),
+      LABEL   = { all:"全部", food:"美食", space:"空間", park:"園區", meet:"相聚" },
+      current = "all";
+
+  function visibleTiles(){
+    return tiles.filter(function(t){ return !t.classList.contains("is-gone"); });
+  }
+  function updateCount(){
+    var n = visibleTiles().length;
+    counter.textContent = "顯示 " + n + " / " + tiles.length + " 張照片　·　" + LABEL[current];
+  }
+  function applyFilter(cat){
+    current = cat;
+    fbtns.forEach(function(b){ b.setAttribute("aria-pressed", String(b.dataset.filter === cat)); });
+    tiles.forEach(function(t){
+      var match = cat === "all" || t.dataset.cat === cat;
+      if (match) { t.classList.remove("is-gone"); }
+      t.classList.toggle("is-out", !match);
+    });
+    var commit = function(){
+      tiles.forEach(function(t){
+        var match = cat === "all" || t.dataset.cat === cat;
+        t.classList.toggle("is-gone", !match);
+        if (match) t.classList.remove("is-out");
+      });
+      updateCount();
+    };
+    if (reduce) commit(); else setTimeout(commit, 200);
+  }
+  fbtns.forEach(function(b){
+    b.addEventListener("click", function(){ applyFilter(b.dataset.filter); });
+  });
+  updateCount();
+
+  /* ---- lightbox ---- */
+  var lb     = document.getElementById("lb"),
+      lbImg  = document.getElementById("lbImg"),
+      lbCap  = document.getElementById("lbCap"),
+      lbIdx  = document.getElementById("lbIdx"),
+      lbPrev = document.getElementById("lbPrev"),
+      lbNext = document.getElementById("lbNext"),
+      lbClose= document.getElementById("lbClose"),
+      gallery = [], index = 0, lastFocus = null;
+
+  function groupItems(group){
+    var sel = '[data-lb][data-group="' + group + '"]';
+    return Array.prototype.slice.call(document.querySelectorAll(sel)).filter(function(el){
+      return !el.classList.contains("is-gone");
+    });
+  }
+  function render(){
+    var el = gallery[index];
+    lbImg.src = el.dataset.full;
+    lbImg.alt = el.querySelector("img").alt;
+    lbCap.textContent = el.dataset.cap || "";
+    lbIdx.textContent = (index + 1) + " / " + gallery.length;
+    var solo = gallery.length < 2;
+    lbPrev.disabled = solo; lbNext.disabled = solo;
+    lbPrev.style.display = solo ? "none" : "";
+    lbNext.style.display = solo ? "none" : "";
+  }
+  function open(el){
+    gallery = groupItems(el.dataset.group);
+    index = Math.max(0, gallery.indexOf(el));
+    lastFocus = el;
+    lb.hidden = false;
+    lb.classList.add("open");
+    document.body.classList.add("lb-open");
+    render();
+    lbClose.focus();
+  }
+  function close(){
+    lb.classList.remove("open");
+    lb.hidden = true;
+    document.body.classList.remove("lb-open");
+    if (lastFocus) lastFocus.focus();
+  }
+  function step(d){
+    if (!gallery.length) return;
+    index = (index + d + gallery.length) % gallery.length;
+    render();
+  }
+  document.addEventListener("click", function(e){
+    var trigger = e.target.closest("[data-lb]");
+    if (trigger) { open(trigger); return; }
+    if (lb.hidden || !lb.contains(e.target)) return;
+    // click anywhere on the backdrop — the stage, the rails, the overlay itself
+    if (e.target !== lbImg && !e.target.closest("button")) close();
+  });
+  lbClose.addEventListener("click", close);
+  lbPrev.addEventListener("click", function(){ step(-1); });
+  lbNext.addEventListener("click", function(){ step(1); });
+  document.addEventListener("keydown", function(e){
+    if (lb.hidden) return;
+    if (e.key === "Escape") { e.preventDefault(); close(); }
+    else if (e.key === "ArrowLeft") { e.preventDefault(); step(-1); }
+    else if (e.key === "ArrowRight") { e.preventDefault(); step(1); }
+    else if (e.key === "Tab") {
+      var focusables = [lbClose, lbPrev, lbNext].filter(function(b){
+        return b.offsetParent !== null && !b.disabled;
+      });
+      if (!focusables.length) return;
+      var first = focusables[0], last = focusables[focusables.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      else if (focusables.indexOf(document.activeElement) === -1) { e.preventDefault(); first.focus(); }
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
